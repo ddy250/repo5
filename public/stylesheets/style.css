@@ -1,0 +1,94 @@
+body {
+  padding: 20px;
+  background-color: white;
+    color: #7093b1;
+  font: 1em/1.5 'Open Sans',sans-serif;
+}
+
+a {
+    color: #6e6e6e;
+    font: 1em/1.5 'Open Sans',sans-serif;
+    color: #7093b1;
+    display: block;
+
+}
+div> a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open sans',sans-serif;
+}
+
+#header{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50%;
+}
+
+.header-paragraph{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 15px 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th{
+    color: #7b8996;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+th > p{
+    border-left: 1px solid #b6cad3;
+    margin-left: -15px;
+    padding-left: 10px;
+
+}
+
+tr{
+  display: table-row;
+  width: 100%;
+  text-align: left;
+
+}
+
+.icon{
+    display: flex;
+    line-height: 50%;
+    padding-left: 10px;
+    color: #7093b1;
+
+}
+
+td, th{
+    font-size: 14px;
+    padding: 15px 15px 15px 0px;
+    text-align: left;
+    max-width: 20px;
+
+}
+tr{
+    border: 1px solid #b6cad3;
+}
+
+th{
+    padding: 0px;
+}
+.less:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

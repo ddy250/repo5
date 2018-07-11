@@ -1,0 +1,19 @@
+script.
+    // function that replaces text between "more" and "less"
+    $.fn.extend({
+        toggleText: function (a, b) {
+            return this.text(this.text() == b ? a : b);
+        }
+    });
+
+    //onclick calls the above function and toggles the industry fields itself
+    $(document).ready(function () {
+        $(".less").click(function () {
+            $(this).prev('[class^="demo2"]').fadeToggle(0);
+            var num = $(".less").index(this);
+            $(this).toggleText( " | " + (i[num]-1)   +' More', ' | Less');
+
+        });
+        });
+
+
