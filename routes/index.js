@@ -27,7 +27,7 @@ function BFormatter(num,newarray) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    request('http://localhost:3000/users', function (error, response, body) {
+    request('https://whispering-castle-24552.herokuapp.com/users', function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was receive
         var c;
