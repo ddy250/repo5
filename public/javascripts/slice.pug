@@ -1,0 +1,26 @@
+script.
+    var x = #{x}
+
+    i[x] = 1;
+    function myFunction() {
+        var y = f[x].topLevelIndustry.length;
+        var z = f[x].topLevelIndustry.join().length;
+        var a = f[x].topLevelIndustry;
+        var b = "";
+        while (z > 65) {
+            a = f[x].topLevelIndustry.slice(0, y - i[x]);
+            b = f[x].topLevelIndustry.slice(y - i[x], y);
+            z = a.join().length;
+            i[x]++;
+        }
+        var d = "&nbsp;|&nbsp;" + (i[x] - 1) + "&nbsp;More";
+        var m = document.getElementsByClassName("demo1");
+        m[x].innerHTML = a;
+        if (b) {
+            var n = document.getElementsByClassName("demo2");
+            n[x].innerHTML = ', ' + b;
+            var l = document.getElementsByClassName("less");
+            l[x].innerHTML = d;
+        }
+    }
+    myFunction()
