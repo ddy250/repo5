@@ -11,7 +11,7 @@ script.
         $(".less").click(function () {
             $(this).prev('[class^="demo2"]').fadeToggle(0);
             var num = $(".less").index(this);
-            $(this).toggleText( ' ' + (i[num]-1) +' | More', ' | Less');
+            $(this).toggleText( ' | ' + (i[num]-1) +' More', ' | Less');
 
         });
         });
