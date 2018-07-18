@@ -1,24 +1,36 @@
 script.
     var x = #{x}
-
     i[x] = 1;
     function myFunction() {
         var y = f[x].topLevelIndustry.length;
-        var z = f[x].topLevelIndustry.join().length;
+        var z = f[x].topLevelIndustry.join().length + y;
         var a = f[x].topLevelIndustry;
         var b = "";
         while (z > 65) {
             a = f[x].topLevelIndustry.slice(0, y - i[x]);
             b = f[x].topLevelIndustry.slice(y - i[x], y);
-            z = a.join().length;
+            z = a.join().length + (y - i[x]);
             i[x]++;
         }
+        var atext = '', btext = '', aLen, bLen, j;
+        aLen = a.length;
+        bLen = b.length;
+        for (j = 0; j < aLen; j++) {
+            atext += "<a>" + a[j] + ", </a>";
+        }
+        atext = atext.slice(0, -6);
+        atext += "</a>";
         var d = "&nbsp;|&nbsp;" + (i[x] - 1) + "&nbsp;More";
         var m = document.getElementsByClassName("demo1");
-        m[x].innerHTML = a;
+        m[x].innerHTML = atext;
         if (b) {
+            for (j = 0; j < bLen; j++) {
+                btext += "<a>" + b[j] + ", </a>";
+            }
+            btext = btext.slice(0, -6);
+            btext += "</a>";
             var n = document.getElementsByClassName("demo2");
-            n[x].innerHTML = ', ' + b;
+            n[x].innerHTML = btext;
             var l = document.getElementsByClassName("less");
             l[x].innerHTML = d;
         }
