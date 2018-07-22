@@ -36,3 +36,40 @@ script.
         }
     }
     myFunction()
+    var q = #{q}
+    i[q] = 1;
+    function myFunction2() {
+        var y = f[q].topLevelIndustry.length;
+        var z = f[q].topLevelIndustry.join().length + y;
+        var a = f[q].topLevelIndustry;
+        var b = "";
+        while (z > 65) {
+            a = f[q].topLevelIndustry.slice(0, y - i[q]);
+            b = f[q].topLevelIndustry.slice(y - i[q], y);
+            z = a.join().length + (y - i[q]);
+            i[q]++;
+    }
+    var atext = '', btext = '', aLen, bLen, j;
+    aLen = a.length;
+    bLen = b.length;
+    for (j = 0; j < aLen; j++) {
+        atext += "<a>" + a[j] + ", </a>";
+    }
+    atext = atext.slice(0, -6);
+    atext += "</a>";
+    var d = "&nbsp;|&nbsp;" + (i[q ] - 1) + "&nbsp;More";
+    var m = document.getElementsByClassName("demo3");
+    m[q].innerHTML = atext;
+    if (b) {
+        for (j = 0; j < bLen; j++) {
+            btext += "<a>" + b[j] + ", </a>";
+        }
+        btext = btext.slice(0, -6);
+        btext += "</a>";
+        var n = document.getElementsByClassName("demo4");
+        n[q].innerHTML = btext;
+        var l = document.getElementsByClassName("less1");
+        l[q].innerHTML = d;
+    }
+    }
+    myFunction2()

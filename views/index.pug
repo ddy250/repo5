@@ -5,10 +5,32 @@ block content
   script.
     var f=!{JSON.stringify(c)};
     var i=[];
+    window.onload = function (event) {
+        var w = window.innerWidth;
+        if (w > 750) {
+            document.getElementById('firsttable').style.display = 'block';
+            document.getElementById('secondtable').style.display = 'none';
+    } else {
+    document.getElementById('firsttable').style.display = 'none';
+    document.getElementById('secondtable').style.display = 'block';
+    }
+    };
+
+    window.onresize = function (event) {
+        var w = window.innerWidth;
+        if (w > 750) {
+            document.getElementById('firsttable').style.display = 'block';
+            document.getElementById('secondtable').style.display = 'none';
+    } else {
+    document.getElementById('firsttable').style.display = 'none';
+    document.getElementById('secondtable').style.display = 'block';
+    }
+    };
+
   h1#header Companies In US States
   p.header-paragraph 1-#{c.length} of #{c.length} Companies
 
-  table
+  table#firsttable(hidden='')
       tr
         th(style='width: 25%;')
           p(style=' margin-left: 0px; border-left: 0px;') Company Name
@@ -37,7 +59,8 @@ block content
            span.demo2(hidden='')
            span.less(style= 'color: #1d8bea;')
         include ../public/javascripts/slice
-        td
+
+          td
           p(style='display: inline; color: #6e6e6e;') #{c[x].location.CountryCode}
           span ,&nbsp;
           a(style='display: inline;') #{c[x].location.State}
@@ -47,6 +70,51 @@ block content
           p(style='color: #6e6e6e;') #{e[x]}
         td
           a  #{d[x]}
+
+      -}
+
+
+  div#secondtable(hidden='')
+      -var q
+      -for (q in c){
+      table.border
+            tr.noborder
+                th(style='width: 25%;')
+                    p(style=' margin-left: 0px; border-left: 0px;') Company Name
+                td.icon
+                    .div
+                        img(src=c[q].companyLogo, width= '45px',style=' max-height=45px;')
+                    .div(style='padding-left:10px;')
+                        a(style='font-weight: 550; display:block;')=c[q].companyName
+                        a(style='display:block;')=c[q].companyDomain
+            tr.noborder
+                th(style='width: 26%;')
+                    p(style=' margin-left: 0px; border-left: 0px;') Industry
+                td
+                    span.demo3
+                    span.demo4(hidden='')
+                    span.less1(style= 'color: #1d8bea;')
+            include ../public/javascripts/slice
+
+            tr.noborder
+                th(style='width: 25%;')
+                    p(style=' margin-left: 0px; border-left: 0px;') Location
+                td
+                    p(style='display: inline; color: #6e6e6e;') #{c[q].location.CountryCode}
+                    span ,&nbsp;
+                    a(style='display: inline;') #{c[q].location.State}
+                    span ,&nbsp;
+                    a(style='display: inline;') #{c[q].location.City}
+            tr.noborder
+                th(style='width: 12%;')
+                    p(style=' margin-left: 0px; border-left: 0px;') Revenue
+                td
+                    p(style='color: #6e6e6e;') #{e[q]}
+            tr.noborder
+                th(style='width: 12%;')
+                    p(style=' margin-left: 0px; border-left: 0px;') Employees
+                td
+                    a  #{d[q]}
 
       -}
 

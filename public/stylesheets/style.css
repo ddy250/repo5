@@ -91,3 +91,12 @@ th{
     cursor: pointer;
     text-decoration: underline;
 }
+
+.less1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.border{
+    margin-bottom: 20px;
+}
