@@ -14,16 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="482">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="262">
@@ -127,28 +127,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="heroku app4 zoominfo table version4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heroku app4 zoominfo table version4" type="462c0819:PsiDirectoryNode" />
+              <item name="heroku app5 zoominfo table version5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku app5 zoominfo table version5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="heroku app4 zoominfo table version4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heroku app4 zoominfo table version4" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heroku app4 zoominfo table version4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heroku app4 zoominfo table version4" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heroku app4 zoominfo table version4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heroku app4 zoominfo table version4" type="462c0819:PsiDirectoryNode" />
+              <item name="heroku app5 zoominfo table version5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku app5 zoominfo table version5" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="heroku app4 zoominfo table version4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heroku app4 zoominfo table version4" type="462c0819:PsiDirectoryNode" />
+              <item name="heroku app5 zoominfo table version5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku app5 zoominfo table version5" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -201,15 +190,15 @@
       <workItem from="1531828149891" duration="612000" />
       <workItem from="1531829580094" duration="17000" />
       <workItem from="1531897956407" duration="7559000" />
-      <workItem from="1532254562573" duration="5950000" />
+      <workItem from="1532254562573" duration="8350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124415000" />
+    <option name="totallyTimeSpent" value="126815000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24570982" />
@@ -218,7 +207,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32972136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972136" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -257,6 +246,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/index.pug">
@@ -567,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -613,6 +607,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
